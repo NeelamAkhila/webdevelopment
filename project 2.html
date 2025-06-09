@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="cascade.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>Rock-Paper-Scissors</h1>
+
+    <!-- Start Game Button -->
+    <div id="start-screen">
+      <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Game Section Hidden Initially -->
+    <div id="game-section" class="hidden">
+      <div class="choices">
+        <button class="choice-btn" onclick="play('rock')">🪨Rock</button>
+        <button class="choice-btn" onclick="play('paper')">🗞Paper</button>
+        <button class="choice-btn" onclick="play('scissors')">✂Scissors</button>
+      </div>
+
+      <div class="result" id="result"></div>
+      <div class="score" id="score"></div>
+      <div class="final-result" id="final-result"></div>
+
+      <button id="restart-button" class="hidden">Restart Game</button>
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
